@@ -91,6 +91,6 @@ Reveal.js needs a server component for this
 </pre>
 
 ## References
-- https://github.com/nexxTM/slides/pandoc_reveal/slides.md
+- https://github.com/nexxTM/slides/blob/master/pandoc_reveal/slides.md
 - http://johnmacfarlane.net/pandoc/demo/example9/producing-slide-shows-with-pandoc.html
 - http://johnmacfarlane.net/pandoc/README.html
