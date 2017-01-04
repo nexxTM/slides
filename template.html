@@ -13,7 +13,7 @@ $endif$
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="$revealjs-url$/css/reveal.min.css"/>
+  <link rel="stylesheet" href="$revealjs-url$/css/reveal.css"/>
     <style type="text/css">code{white-space: pre;}</style>
 $if(highlighting-css)$
     <style type="text/css">
@@ -25,7 +25,7 @@ $for(css)$
     <link rel="stylesheet" href="$css$"/>
 $endfor$
 $else$
-    <link rel="stylesheet" href="$revealjs-url$/css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="$revealjs-url$/css/theme/solarized.css" id="theme">
 $endif$
     <!-- If the query includes 'print-pdf', include the PDF print sheet -->
     <script>
@@ -78,7 +78,7 @@ $body$
 
 
   <script src="$revealjs-url$/lib/js/head.min.js"></script>
-  <script src="$revealjs-url$/js/reveal.min.js"></script>
+  <script src="$revealjs-url$/js/reveal.js"></script>
 
   <script>
 
@@ -89,8 +89,8 @@ $body$
         progress: true,
         history: true,
         center: true,
-        theme: $if(theme)$'$theme$'$else$Reveal.getQueryHash().theme$endif$, // available themes are in /css/theme
-        transition: $if(transition)$'$transition$'$else$Reveal.getQueryHash().transition || 'default'$endif$, // default/cube/page/concave/zoom/linear/fade/none
+        transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+        transitionSpeed: 'fast',
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
@@ -106,4 +106,3 @@ $body$
   $endfor$
   </body>
 </html>
-
